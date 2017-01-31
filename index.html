@@ -99,9 +99,19 @@
 </center>
 </div>
 </section>
+<!-- disables the formspree -->
+<script language="Javascript">
+  function disable() {
+    var limit = document.forms[0].elements.length;
+    for (i=0;i<limit;i++) {
+      document.forms[0].elements[i].disabled = true;
+    }
+  }
+</script>
 <section id=contact class="section text-center">
 <div class=container>
 <h2 class=section-title>Contact Us</h2>
+<p style="color:red">Due to repeated spam, we have temporarily disabled the contact form. Please email us for any enquiries. Thank you!</p>
 <div class=row>
 <div class="col-md-7 col-md-offset-1 text-left wow fadeInLeft" data-wow-duration=1s>
 <form action="https://formspree.io/cticorp@gmail.com" method=POST class="contact-form  wow fadeInLeft">
